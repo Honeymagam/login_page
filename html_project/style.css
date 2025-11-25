@@ -1,34 +1,69 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6b73ff, #000dff);
 }
 
-header {
-  text-align: center;
-  padding: 40px 20px;
-  background: #4c6ef5;
-  color: white;
+.login-container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    width: 300px;
+    text-align: center;
 }
 
-main {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.card {
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.login-container input {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #222;
-  color: white;
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background: #000dff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+    background: #6b73ff;
+}
+
+.login-container .signup {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-container .signup a {
+    color: #000dff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container .signup a:hover {
+    text-decoration: underline;
 }
